@@ -1,4 +1,4 @@
-DIMLI
+DIMLI (Archived)
 =====
 
 Digital Media Management Library
@@ -44,39 +44,39 @@ All data created by, and imported into, DIMLI will reside within these tables an
 
 2) Insert the following contents into the file:
 
-    <?php
-    /* 
-    DATABASE CONSTANTS
-    ------------------
-    Define the specifics of your server environment */
+        <?php
+        /* 
+        DATABASE CONSTANTS
+        ------------------
+        Define the specifics of your server environment */
 
-    define('DB_SERVER', '{your.server.url.here}');
-    define('DB_USER', '{yourDatabaseUsername}');
-    define('DB_PASS', '{yourDatabasePassword}');
-    define('DB_NAME', '{yourDatabaseName}');
+        define('DB_SERVER', '{your.server.url.here}');
+        define('DB_USER', '{yourDatabaseUsername}');
+        define('DB_PASS', '{yourDatabasePassword}');
+        define('DB_NAME', '{yourDatabaseName}');
 
-    /* 
-    DEFINE IMAGE FILEPATH
-    ---------------------
-    Define the filepath for the directory that stores your JPG archive 
-    Examples:
-       "../MyImageFiles/"
-       "http://hosted.image.repository.edu/images/" */
+        /* 
+        DEFINE IMAGE FILEPATH
+        ---------------------
+        Define the filepath for the directory that stores your JPG archive 
+        Examples:
+           "../MyImageFiles/"
+           "http://hosted.image.repository.edu/images/" */
 
-    define('IMAGE_DIR', '{filepathOfYourImageDirectory}');
-    
-    /*
-    DEFINE ENCRYPTION SALT
-    ----------------------
-    Define a salt parameter to pass into the crypt function */
+        define('IMAGE_DIR', '{filepathOfYourImageDirectory}');
 
-    define('SALT', '19ReXiNSuLaRuM23');
-    
-    /*
-    OTHER CONSTANTS
-    ---------------
-    */
-    define('DIR', dirname(__DIR__).'/');
+        /*
+        DEFINE ENCRYPTION SALT
+        ----------------------
+        Define a salt parameter to pass into the crypt function */
+
+        define('SALT', '19ReXiNSuLaRuM23');
+
+        /*
+        OTHER CONSTANTS
+        ---------------
+        */
+        define('DIR', dirname(__DIR__).'/');
 
 3) Replace each of the sections in the above code that are wrapped in `{` and `}` with the appropriate values for your server environment.
 
